@@ -94,7 +94,7 @@ function getPosition(event) {
 let button = document.querySelector("#geo-button");
 button.addEventListener("click", getPosition);
 
-// changing temp to farh and celcius
+// changing temp to farh and celcius make sure to update
 function changeToCel(event) {
 	event.preventDefault();
 	let weather = document.querySelector("#temp");
