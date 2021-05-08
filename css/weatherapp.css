@@ -41,7 +41,7 @@ h3 {
 	border: 5px solid orange;
 	border-radius: 30%;
 }
-#cardBorder {
+.card-body {
 	border: 5px solid purple;
 	border-radius: 50%;
 }
