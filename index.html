@@ -33,7 +33,7 @@
 							<label>Enter City Name:</label>
 							<input
 								type="search"
-								id="search-city"
+								id="city-input"
 								placeholder=" Type a city.."
 							/>
 							<button type="submit" id="submit-button" class="btn btn-primary">
@@ -46,111 +46,34 @@
 					</div>
 
 					<div class="row">
-						<div class="col col-sm-4" id="current-city">
+						<div class="col col-sm-4" id="city-name">
 							<div class="card border-info">
-								<h3 id="city-name">Orlando, FL</h3>
-								<h4 id="current-date">Sunday, 7, April</h4>
-								<h4 id="current-time">5p</h4>
+								<h3 id="city">Orlando, FL</h3>
+								<ul id="date-time">
+									<li id="date">Friday 4:00 PM</li>
+									<li id="description"></li>
+								</ul>
 							</div>
 						</div>
 						<div class="col col-sm-4" id="current-weather">
 							<div class="card" id="cardBorder">
-								<img
-									src="https://www.jing.fm/clipimg/detail/0-5853_clip-art-library-download-techflourish-collections-sun-clouds.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the rain"
-								/>
+								<img src="" class="" alt="" id="icon" />
 								<h2 id="weather-nums">
-									<span class="temp" id="temp"></span>
-									<a id="farh-link" href="#">°F</a> |
-									<a id="cel-link" href="#">°C</a>
+									<span class="temp" id="temperature"></span>
+									<a id="fahr-link" href="#">°F</a> |
+									<a id="celsius-link" href="#">°C</a>
 									<br />
-									<h5 class="description" id="description"></h5>
+									<ul>
+										<li>Humidity: <span id="humidity"></span> %</li>
+										<li>Wind: <span id="wind"></span> MPH</li>
+									</ul>
 								</h2>
 							</div>
 						</div>
 					</div>
 				</form>
 				<div class="row g-0">
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Monday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Tuesday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Wednesday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Thursday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Friday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-6 col-md-2">
-						<div class="card border-warning">
-							<div class="card-body">
-								<h5 class="card-title">Saturday</h5>
-								<img
-									src="https://i.pinimg.com/originals/2b/b4/b8/2bb4b8583c6c80b205e902952eec545e.png"
-									class="img-fluid img-thumbnail"
-									alt="picture of the sun"
-								/>
-								<p class="card-text">90° / 70°</p>
-							</div>
-						</div>
-					</div>
+					<div class="weather-forecast" id="weather-forecast"></div>
 				</div>
 			</div>
 		</div>

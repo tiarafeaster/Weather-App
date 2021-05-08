@@ -62,3 +62,7 @@ h5 {
 	color:blue;
 	text-transform: capitalize;
 }
+
+li {
+	list-style: none;
+}
